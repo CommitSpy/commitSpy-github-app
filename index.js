@@ -9,34 +9,19 @@ module.exports = app => {
 
 
   app.on('push', async context => {
-    let repository = {
-      id: null,
-      node_id: null,
-      name: null,
-      full_name: null,
-      private: null
-    }
-
-    let repo_result = _.pick(context.payload.repository, _.keys(repository));
-
 
     let model = {
+      repository: null,
       sender: null,
       installation: null,
       commits: null
     };
     let result = _.pick(context.payload, _.keys(model));
-    result.repository = repo_result
+    // result.repository = repo_result
     // console.log(result)
     app.log(result);
     //send to microservice
 
 
   })
-
-  // For more information on building apps:
-  // https://probot.github.io/docs/
-
-  // To get your app running against GitHub, see:
-  // https://probot.github.io/docs/development/
 }
