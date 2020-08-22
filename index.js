@@ -24,5 +24,6 @@ module.exports = app => {
     //send to microservice
 
     axios.post('https://smee.io/yrt37hGR4UhaKry', result)
+      .then(() => { console.log("sent") })
   })
 }
