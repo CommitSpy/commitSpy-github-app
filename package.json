@@ -21,6 +21,7 @@
     "test:watch": "jest --watch --notify --notifyMode=change --coverage"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "lodash": "^4.17.20",
     "probot": "^9.5.3"
   },
