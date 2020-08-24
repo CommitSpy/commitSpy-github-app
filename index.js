@@ -23,7 +23,7 @@ module.exports = app => {
     app.log(result);
     //send to microservice
 
-    axios.post('https://smee.io/yrt37hGR4UhaKry', result)
+    axios.post('https://smee.io/yrt37hGR4UhaKry', { githook: result })
       .then(() => { console.log("sent") })
   })
 }
