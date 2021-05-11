@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "probot": "^9.5.3"
   },
   "devDependencies": {
