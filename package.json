@@ -23,7 +23,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "lodash": "^4.17.20",
-    "probot": "^9.5.3"
+    "probot": "^12.2.9"
   },
   "devDependencies": {
     "jest": "^24.9.0",
